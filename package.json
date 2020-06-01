@@ -1,0 +1,14 @@
+{
+  "name": "senior-shirts",
+  "version": "1.0.0",
+  "description": "You can create Checkout pages without a server by creating Products and Prices in the Stripe Dashboard before launching your integration. Then pass the Price ID of your Product to `stripe.redirectToCheckout` on the client when your customer checks out.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^1.4.6"
+  }
+}
