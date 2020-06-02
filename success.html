@@ -1,51 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Stripe Checkout Sample</title>
-    <meta name="description" content="A demo of Stripe Payment Intents" />
-
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/global.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Success!</title>
+    <!-- INSERT LOGO HERE -->
+    <!-- <meta property="og:image" content="https://developer.cdn.mozilla.net/static/img/opengraph-logo.dc4e08e2f6af.png"> -->
+    <meta property="og:description" content="The best senior shirts.">
+    <meta property="og:title" content="Huntington Seniors 2020">
+    <!-- Tailwinds CDN -->
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Load Stripe.js on your website. -->
     <script src="https://js.stripe.com/v3/"></script>
-  </head>
+</head>
 
   <body>
-    <div class="sr-root">
-      <div class="sr-main">
-        <header class="sr-header">
-          <div class="sr-header__logo"></div>
-        </header>
-        <div class="sr-payment-summary completed-view">
-          <h1>Your test payment succeeded</h1>
-          <h4>Checkout Session ID: <span id="session"></span></h4>
-        </div>
-      <div class="sr-content">
-        <div class="pasha-image-stack">
-          <img
-            src="https://picsum.photos/280/320?random=1"
-            width="140"
-            height="160"
-          />
-          <img
-            src="https://picsum.photos/280/320?random=2"
-            width="140"
-            height="160"
-          />
-          <img
-            src="https://picsum.photos/280/320?random=3"
-            width="140"
-            height="160"
-          />
-          <img
-            src="https://picsum.photos/280/320?random=4"
-            width="140"
-            height="160"
-          />
-        </div>
+    <div class="flex h-screen">
+      <div class="m-auto">
+    <div class="max-w-sm rounded overflow-hidden shadow-xl">
+      <img class="w-full" src="img/undraw_make_it_rain_iwk4.svg" alt="Payment Sucess!">
+      <div class="px-6 py-4">
+        <div class="font-bold text-xl mt-6 mb-4 text-center">Success, thank you for your purchase!<br><span class="text-6xl">🤑</span></div>
+      <div class="px-6 py-4">
+        <h4 class="italic inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-blue-700 mr-2">Checkout Session ID: <span id="session"></span></h4>
+        <span id="session" class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700"></span>
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700"><a href="/">Return back to site ➡</a></span>
       </div>
     </div>
+  </div>
+</div>
     <script>
       // Replace with your own publishable key: https://dashboard.stripe.com/test/apikeys
       var PUBLISHABLE_KEY = "pk_1234";
