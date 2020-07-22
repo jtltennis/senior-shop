@@ -65,6 +65,13 @@
                     <input id="quantity-input" class="appearance-none block w-full py-2 px-4 leading-snug text-gray-700 bg-gray-200 focus:bg-white border border-gray-200 focus:border-gray-500 rounded md:rounded-r-none focus:outline-none" type="number" min="1" value="1">
                   </div>
                   <div class="w-1/2">
+                      <select id="ddlViewBy" class="appearance-none block w-full py-2 px-4 ml-4 leading-snug text-gray-700 bg-gray-200 focus:bg-white border border-gray-200 focus:border-gray-500 rounded md:rounded-r-none focus:outline-none" type="number" min="1" value="1">
+                      <option value="s">S</option>
+                      <option value="m">M</option>
+                      <option value="l">L</option>                  
+                    </select>
+                  </div>
+                    <div class="w-1/2">
                     <button id="basic-shirt-button" class="inline-block w-full py-3 px-4 leading-none text-white bg-indigo-500 hover:bg-indigo-600 rounded md:rounded-l-none">Buy</button>
                   </div>
                 </div>
@@ -159,6 +166,12 @@
         </div>
       </footer>
     
+      <!-- Listen For Size Selector -->
+      <script>
+        var e = document.getElementById("ddlViewBy");
+        var strUser = e.options[e.selectedIndex].value;
+        console.log(strUser)
+      </script>
         <!-- Load Stripe.js on your website. -->
         <script src="app.js"></script>  
         <!-- Import the component -->
